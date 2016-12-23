@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+   >
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/wook"
+        android:layout_marginRight="10dp"
+        android:contentDescription="Property Image"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/img"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/section"
+        android:layout_toRightOf="@id/img"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello World"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="10dp"
+            android:textSize="20sp"
+            android:id="@+id/ctitle"
+            android:textColor="#fff"
+            android:background="#2BBC0E"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World"
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp"
+            android:id="@+id/cdesc" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/pricingSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Price"
+            android:textColor="#FF5733"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/bedroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/price"
+            android:layout_marginRight="15dp"
+            android:text="Bed:" />
+
+        <TextView
+            android:id="@+id/bathroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/price"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/bedroom"
+            android:text="Bath:" />
+
+        <TextView
+            android:id="@+id/carspot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/price"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/bathroom"
+            android:text="Car:" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

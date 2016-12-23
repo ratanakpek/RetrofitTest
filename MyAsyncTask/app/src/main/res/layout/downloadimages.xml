@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtQuery"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        android:hint="url...."/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="download"
+        android:text="Download"/>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:visibility="gone"
+        android:indeterminate="false"
+        android:id="@+id/progresbar" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:entries="@array/title"
+        android:id="@+id/listviews"/>
+
+
+</LinearLayout>

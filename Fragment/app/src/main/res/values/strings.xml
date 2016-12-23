@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Fragment</string>
+
+    <string-array name="question">
+        <item>What is your name?</item>
+        <item>What is your father name?</item>
+        <item>What is your mother name?</item>
+        <item>What is your brother name</item>
+        <item>Where do you live?</item>
+        <item>Do you want to visit korea?</item>
+    </string-array>
+
+    <string-array name="answer">
+        <item>My name is Ratanak Pek</item>
+        <item>My father name is Somnang</item>
+        <item>My mother name is Jreb</item>
+        <item>My brother name is Neang</item>
+        <item>I am living in Phnom Penh</item>
+        <item>Yes, absolutely!</item>
+    </string-array>
+</resources>

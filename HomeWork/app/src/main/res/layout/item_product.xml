@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="@color/item"
+        android:padding="5dp"
+        app:contentPaddingLeft="5dp"
+        android:id="@+id/cardview"
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10sp"
+        android:clickable="true"
+        android:layout_marginBottom="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:id="@+id/image"
+            android:src="@color/colorAccent"/>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/relative"
+           android:layout_weight="3"
+           android:paddingLeft="5dp"
+          >
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="#3476d9"
+               android:text="Samsung Galaxy S7 Edge"
+               android:layout_marginTop="5sp"
+               android:id="@+id/title"
+               android:textSize="20sp"/>
+
+           <ImageView
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:src="@drawable/calendar"
+               android:id="@+id/imageOne"
+               android:layout_alignParentBottom="true"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_alignParentBottom="true"
+               android:id="@+id/tvViews"
+               android:layout_height="wrap_content"
+               android:textColor="#d34836"
+               android:layout_marginLeft="5dp"
+               android:layout_toRightOf="@id/imageOne"
+               android:text="Views"/>
+           <ImageView
+               android:layout_marginLeft="20dp"
+               android:id="@+id/imageTwo"
+               android:layout_width="30dp"
+               android:layout_toRightOf="@id/tvViews"
+               android:layout_height="30dp"
+               android:src="@drawable/eye"
+               android:layout_alignParentBottom="true"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_alignParentBottom="true"
+               android:layout_height="wrap_content"
+               android:id="@+id/tvDates"
+               android:textColor="#d34836"
+               android:layout_marginLeft="5dp"
+               android:layout_toRightOf="@id/imageTwo"
+               android:text="Views"/>
+
+       </RelativeLayout>
+        <ImageView
+            android:id="@+id/overflow"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/more" />
+
+    </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/desc"
+
+                android:text="This product is very expensive that we get it from samsung Company."/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

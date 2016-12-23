@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/colorAccent"
+    android:onClick="onClick"
+    android:text="Get Data"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:onClick="postData"
+        android:text="POST Data"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:onClick="deleteData"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:onClick="updateData"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recylcer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

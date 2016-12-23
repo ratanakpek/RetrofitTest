@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FragmentTestAgain</string>
+    <string-array name="q">
+        <item>What is your name?</item>
+        <item>Where do you live?</item>
+    </string-array>
+    <string-array name="a">
+        <item>My name is Ratanak Pek.</item>
+        <item>I am living in PP.</item>
+    </string-array>
+</resources>

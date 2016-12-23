@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.advancecourse.homework.MainActivity"
+    android:background="@drawable/back">
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvSign"
+        android:layout_height="wrap_content"
+        android:text="Sign In"/>
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mtf_image="@drawable/email"
+        android:id="@+id/bedt"
+        android:layout_below="@id/tvSign"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:id="@+id/edtEmail"
+            android:hint="Email : "
+            android:textColor="#333"
+            android:textColorHint="#666"
+            android:textSize="20sp" />
+
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mtf_image="@drawable/key"
+        android:id="@+id/bpass"
+        android:layout_below="@id/bedt"
+        android:layout_gravity="center_horizontal" >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:hint="Password : "
+            android:textColor="#333"
+            android:textColorHint="#666"
+            android:id="@+id/edtPassword"
+            android:textSize="20sp" />
+    </com.github.florent37.materialtextfield.MaterialTextField>
+    <TextView
+        android:layout_below="@id/bpass"
+        android:layout_marginTop="20dp"
+        android:layout_alignRight="@id/bpass"
+        android:layout_width="wrap_content"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:id="@+id/tvPass"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"/>
+
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/tvPass"
+        android:background="#f1523e"
+        android:id="@+id/btnSignin"
+    android:text="Sign In"/>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:background="#3b5998"
+        android:id="@+id/btnFacebook"
+        android:text="Sign in with Facebook"
+        android:layout_below="@id/btnSignin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnTwitter"
+        android:background="#01b7f3"
+        android:layout_below="@id/btnFacebook"
+        android:text="Sign in with Twitter"/>
+
+
+</RelativeLayout>

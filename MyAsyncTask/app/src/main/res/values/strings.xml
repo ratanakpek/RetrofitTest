@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MyAsyncTask</string>
+    <string-array name="title">
+        <item>Hello World 1</item>
+        <item>Hello World 2</item>
+        <item>Hello World 3</item>
+        <item>Hello World 4</item>
+        <item>Hello World 5</item>
+    </string-array>
+    <string-array name="urls">
+        <item>http://www.satsignal.eu/wxsat/msg-1-fc-40.jpg</item>
+        <item>http://gratisography.com/pictures/334_1.jpg</item>
+        <item>http://gratisography.com/pictures/335_1.jpg</item>
+        <item>http://gratisography.com/pictures/333_1.jpg</item>
+        <item>http://www.w3schools.com/css/img_mountains.jpg</item>
+    </string-array>
+</resources>
